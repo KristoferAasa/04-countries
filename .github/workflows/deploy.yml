@@ -36,7 +36,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     env:
-      GITHUB_TOKEN: ${{ secrets.VITE_WEATHER_API_KEY }}
+      VITE_WEATHER_API_KEY: ${{ secrets.VITE_WEATHER_API_KEY }}
 
     steps:
       - name: Download artifact
